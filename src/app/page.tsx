@@ -82,7 +82,7 @@ export default function LipiantarPage() {
             </label>
             <Textarea
               id="roman-punjabi-input"
-              placeholder="Example: Ho jadd vi bole janta munh nu laave tala..."
+              placeholder="Example: Type in Roman Punjabi text here ..."
               value={romanPunjabi}
               onChange={(e) => setRomanPunjabi(e.target.value)}
               rows={8}
