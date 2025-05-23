@@ -107,4 +107,7 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  [lang="pa"] {
+    font-family: 'Noto Sans Gurmukhi', var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  }
 }
