@@ -106,7 +106,7 @@ export function NotesWorkspace() {
   return (
     <section className="w-full max-w-5xl mx-auto mt-10 mb-8">
       <div className="bg-card shadow-xl rounded-xl">
-        <Accordion type="single" collapsible defaultValue="notes-workspace-item" className="w-full">
+        <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="notes-workspace-item" className="border-none">
             <AccordionTrigger className="hover:no-underline w-full text-left p-6 md:p-10 focus-visible:ring-inset data-[state=open]:pb-4 md:data-[state=open]:pb-6">
               <div className="flex-1">
