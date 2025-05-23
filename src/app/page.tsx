@@ -76,22 +76,31 @@ export default function LipiantarPage() {
 
   return (
     <div className="container mx-auto flex min-h-screen flex-col items-center p-4 md:p-8 bg-background">
-      
+      <header className="mb-8 mt-8 text-center w-full max-w-4xl">
+        <div className="inline-flex items-center justify-center p-3 bg-primary/20 rounded-full mb-4">
+          <LanguagesIcon className="h-10 w-10 text-primary" />
+        </div>
+        <h1 className="text-4xl font-bold text-primary">Lipiantar AI</h1>
+        <p className="mt-2 text-lg text-muted-foreground">
+          Translate Roman Punjabi to formal Gurmukhi Punjabi with AI.
+        </p>
+      </header>
+
       {/* New Notes Workspace Section - Moved to the top */}
       <NotesWorkspace />
 
       {/* Separator between Notes Workspace and Lipiantar AI */}
       <PageSeparator className="my-10 md:my-16 w-full max-w-4xl border-dashed border-border/50" />
 
-      {/* Lipiantar AI Translation Section - Moved to the bottom */}
+      {/* AI Translation Tool Section */}
       <main className="w-full max-w-4xl p-6 md:p-10 bg-card shadow-xl rounded-xl">
         <header className="mb-8 text-center">
-          <div className="inline-flex items-center justify-center p-3 bg-primary/20 rounded-full mb-4">
+          {/* <div className="inline-flex items-center justify-center p-3 bg-primary/20 rounded-full mb-4">
             <LanguagesIcon className="h-10 w-10 text-primary" />
-          </div>
-          <h1 className="text-4xl font-bold text-primary">Lipiantar AI</h1>
-          <p className="mt-2 text-lg text-muted-foreground">
-            Translate Roman Punjabi to formal Gurmukhi Punjabi with AI.
+          </div> */}
+          <h2 className="text-3xl font-bold text-primary">AI Translation Tool</h2>
+          <p className="mt-2 text-md text-muted-foreground">
+            Use AI to translate your Roman Punjabi text.
           </p>
         </header>
 
@@ -177,17 +186,9 @@ export default function LipiantarPage() {
         isLoading={isLoading && isModalOpen}
       />
       
-      {/* Separator between Lipiantar AI and Notes Workspace */}
-      <PageSeparator className="my-10 md:my-16 w-full max-w-4xl border-dashed border-border/50" />
-
-      {/* New Notes Workspace Section */}
-      <NotesWorkspace />
-      
       <footer className="mt-12 text-center text-sm text-muted-foreground">
         <p>&copy; {new Date().getFullYear()} Lipiantar. Crafted with care.</p>
       </footer>
     </div>
   );
 }
-
-    
