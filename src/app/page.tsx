@@ -76,7 +76,14 @@ export default function LipiantarPage() {
 
   return (
     <div className="container mx-auto flex min-h-screen flex-col items-center p-4 md:p-8 bg-background">
-      {/* Lipiantar AI Translation Section */}
+      
+      {/* New Notes Workspace Section - Moved to the top */}
+      <NotesWorkspace />
+
+      {/* Separator between Notes Workspace and Lipiantar AI */}
+      <PageSeparator className="my-10 md:my-16 w-full max-w-4xl border-dashed border-border/50" />
+
+      {/* Lipiantar AI Translation Section - Moved to the bottom */}
       <main className="w-full max-w-4xl p-6 md:p-10 bg-card shadow-xl rounded-xl">
         <header className="mb-8 text-center">
           <div className="inline-flex items-center justify-center p-3 bg-primary/20 rounded-full mb-4">
@@ -182,3 +189,5 @@ export default function LipiantarPage() {
     </div>
   );
 }
+
+    
